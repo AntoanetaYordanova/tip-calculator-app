@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="bodyContainer">
+      <header>
+        <div class="logoBox">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+      </header>
+      <main>
+        <div class="mainWrapper">
+          <section class="leftSide">
+            <section class="billSection">
+              <p>Bill</p>
+              <section class="inputWrapper">
+                <img src="images/icon-dollar.svg" alt="dollar sign" />
+                <input type="text" />
+              </section>
+            </section>
+            <section class="selectTippSection">
+              <p>Select Tipp %</p>
+              <div class="percentsWrapper">
+                <button class="percentBox">5%</button>
+                <button class="percentBox">10%</button>
+                <button class="percentBox">15%</button>
+
+                <button class="percentBox">25%</button>
+                <button class="percentBox">50%</button>
+                <input
+                  class="customPercentActive, customPercentNotActive"
+                  type="text"
+                  name=""
+                  disabled
+                  value="Custom"
+                  class="customPercents"
+                />
+              </div>
+            </section>
+            <section class="numberPeopleWrapper">
+              <div class="warnMsgWrapper">
+                <p>Number of People</p>
+                <span class="warnMsg">Can't be zero</span>
+              </div>
+              <div class="numberPeopleInputWrapper">
+                <img src="images/icon-person.svg" alt="person logo" />
+                <input type="text" / class="numberPeopleWarn
+                numberPeopleNormal">
+              </div>
+            </section>
+          </section>
+          <section class="rightSide">
+            <section class="tipAmountSection">
+              <div>
+                <p>Tip Amount</p>
+                <span>/ person</span>
+              </div>
+              <p class="tipPerPercon">$0.00</p>
+            </section>
+            <section class="totalAmountSection">
+              <div>
+                <p>Total</p>
+                <span>/ person</span>
+              </div>
+              <h3 class="tipTotal">$0.00</h3>
+            </section>
+            <button class="resetButton">Reset</button>
+          </section>
+        </div>
+      </main>
+      <script src="/src/app.js"></script>
+    </div>
+  </body>
+</html>
