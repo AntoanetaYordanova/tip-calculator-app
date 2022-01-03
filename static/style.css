@@ -59,11 +59,11 @@ button{
 
 .mainWrapper{
     background-color: #fff;
-    width: 45%;
+    width: 800px;
     border-radius: 23px;
     padding: 25px;
     display: flex;
-    min-height: 45vh;
+    /* min-height: 45vh; */
 }
 
 .leftSide, .rightSide{

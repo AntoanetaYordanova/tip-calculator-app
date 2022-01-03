@@ -1,33 +1,34 @@
 
-@media all and (max-width : 1624px) {
+@media all and (max-width : 840px) {
     .mainWrapper{
-        flex-wrap: wrap;
-        width: 500px;
+        width: 80%;
+        flex-direction: column;
+       align-items: center;
     }
 
     .rightSide{
-        padding-top: 0;
-        margin-left: 0px;
-        margin-top: 20px;
-        flex-grow: 1;
+        margin-left: 0;
+        width: 100%;
     }
 
     .leftSide{
-       width: 100%;
-       margin-right: 0px;
-    }
-    header .logoBox{
-        margin-top: 50px;
-        margin-bottom: 20px;
+        margin-right: 0px;
+        width: 100%;
     }
 
-    .tipAmountSection div p, .totalAmountSection div p{
-        margin-bottom: 0;
+    .percentBox, .customPercent{
+        flex-grow: 1;
     }
 
-    .tipPerPerson, .tipTotal{
-        margin-top: 20px;
+    .tipAmountSection div p, .totalAmountSection div p, .tipPerPerson, .tipTotal {
+        margin-top: 0;
         margin-bottom: 0;
+    }
+}
+
+@media all and (max-width : 650px) {
+    .mainWrapper{
+        width: 90%;
     }
 }
 
