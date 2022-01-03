@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="static/responsive.css">
+    <link rel="stylesheet" href="static/responsive.css" />
   </head>
   <body>
     <div class="bodyContainer">
@@ -17,64 +17,68 @@
       </header>
       <main>
         <div class="mainWrapper">
-          <section class="leftSide">
-            <section class="billSection">
+          <div class="leftSide">
+            <div class="billSection">
               <p>Bill</p>
-              <section class="inputWrapper">
+              <div class="inputWrapper">
                 <img src="images/icon-dollar.svg" alt="dollar sign" />
-                <input type="text" placeholder="0"/>
-              </section>
-            </section>
-            <section class="selectTippSection">
+                <label for="bill"> </label>
+                <input type="text" placeholder="0"/ id="bill">
+              </div>
+            </div>
+            <div class="selectTippSection">
               <p>Select Tipp %</p>
               <div class="percentsWrapper">
-                <button class="percentBox " id="5">5%</button>
+                <button class="percentBox" id="5">5%</button>
                 <button class="percentBox" id="10">10%</button>
                 <button class="percentBox" id="15">15%</button>
 
                 <button class="percentBox" id="25">25%</button>
                 <button class="percentBox" id="50">50%</button>
+                <label for="customPercent"> </label>
                 <input
-                id="customPercent"
+                  id="customPercent"
                   class="customPercent"
                   type="text"
                   name=""
                   value="Custom"
                 />
               </div>
-            </section>
-            <section class="numberPeopleWrapper">
+            </div>
+            <div class="numberPeopleWrapper">
               <div class="warnMsgWrapper">
                 <p>Number of People</p>
                 <span class="warnMsg">Can't be zero</span>
               </div>
               <div class="numberPeopleInputWrapper">
                 <img src="images/icon-person.svg" alt="person logo" />
-                <input type="text" placeholder="0"/ class="
-                numberPeople">
+                <label for="numPeople">
+                  <input id="numPeople" type="text" placeholder="0"/ class="
+                  numberPeople">
+                </label>
               </div>
-            </section>
-          </section>
-          <section class="rightSide">
-            <section class="tipAmountSection">
+            </div>
+          </div>
+          <div class="rightSide">
+            <div class="tipAmountSection">
               <div>
                 <p>Tip Amount</p>
                 <span>/ person</span>
               </div>
               <p class="tipPerPerson">$0.00</p>
-            </section>
-            <section class="totalAmountSection">
+            </div>
+            <div class="totalAmountSection">
               <div>
                 <p>Total</p>
                 <span>/ person</span>
               </div>
               <p class="tipTotal">$0.00</p>
-            </section>
+            </div>
             <button class="resetButton" disabled="disabled">Reset</button>
-          </section>
+          </div>
         </div>
       </main>
-    <script src="src/app.js"></script>
+      <script src="src/app.js"></script>
     </div>
   </body>
 </html>
