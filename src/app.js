@@ -17,7 +17,7 @@ function start() {
 
     let isEnabledResetButton = false;
 
-    billInput.addEventListener('change', (ev) => {
+    billInput.addEventListener('input', (ev) => {
         if(!isEnabledResetButton) {
             enableResetButton();
             isEnabledResetButton = true;
@@ -62,7 +62,7 @@ function start() {
         customPercentInput.value = percents == 0 ? 'Custom' : percents;
     });
 
-    customPercentInput.addEventListener('change', (ev) => {
+    customPercentInput.addEventListener('input', (ev) => {
         if(!isEnabledResetButton) {
             enableResetButton();
             isEnabledResetButton = true;
@@ -81,7 +81,7 @@ function start() {
         }
     });
 
-    numPeopleInput.addEventListener('change', (ev) => {
+    numPeopleInput.addEventListener('input', (ev) => {
 
         if(!isEnabledResetButton) {
             enableResetButton();
