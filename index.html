@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/responsive.css">
   </head>
   <body>
     <div class="bodyContainer">
@@ -21,25 +22,24 @@
               <p>Bill</p>
               <section class="inputWrapper">
                 <img src="images/icon-dollar.svg" alt="dollar sign" />
-                <input type="text" />
+                <input type="text" placeholder="0"/>
               </section>
             </section>
             <section class="selectTippSection">
               <p>Select Tipp %</p>
               <div class="percentsWrapper">
-                <button class="percentBox">5%</button>
-                <button class="percentBox">10%</button>
-                <button class="percentBox">15%</button>
+                <button class="percentBox " id="5">5%</button>
+                <button class="percentBox" id="10">10%</button>
+                <button class="percentBox" id="15">15%</button>
 
-                <button class="percentBox">25%</button>
-                <button class="percentBox">50%</button>
+                <button class="percentBox" id="25">25%</button>
+                <button class="percentBox" id="50">50%</button>
                 <input
-                  class="customPercentActive, customPercentNotActive"
+                id="customPercent"
+                  class="customPercent"
                   type="text"
                   name=""
-                  disabled
                   value="Custom"
-                  class="customPercents"
                 />
               </div>
             </section>
@@ -50,8 +50,8 @@
               </div>
               <div class="numberPeopleInputWrapper">
                 <img src="images/icon-person.svg" alt="person logo" />
-                <input type="text" / class="numberPeopleWarn
-                numberPeopleNormal">
+                <input type="text" placeholder="0"/ class="
+                numberPeople">
               </div>
             </section>
           </section>
@@ -61,20 +61,20 @@
                 <p>Tip Amount</p>
                 <span>/ person</span>
               </div>
-              <p class="tipPerPercon">$0.00</p>
+              <p class="tipPerPerson">$0.00</p>
             </section>
             <section class="totalAmountSection">
               <div>
                 <p>Total</p>
                 <span>/ person</span>
               </div>
-              <h3 class="tipTotal">$0.00</h3>
+              <p class="tipTotal">$0.00</p>
             </section>
-            <button class="resetButton">Reset</button>
+            <button class="resetButton" disabled="disabled">Reset</button>
           </section>
         </div>
       </main>
-      <script src="src/app.js"></script>
+    <script src="src/app.js"></script>
     </div>
   </body>
 </html>

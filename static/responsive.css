@@ -1,0 +1,42 @@
+
+@media all and (max-width : 1624px) {
+    .mainWrapper{
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .rightSide{
+        padding-top: 0;
+        margin-left: 0px;
+        margin-top: 20px;
+        flex-grow: 1;
+    }
+
+    .leftSide{
+       width: 100%;
+       margin-right: 0px;
+    }
+    header .logoBox{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .tipAmountSection div p, .totalAmountSection div p{
+        margin-bottom: 0;
+    }
+
+    .tipPerPerson, .tipTotal{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width : 500px) {
+    .mainWrapper{
+        width: 100%;
+    }
+
+    .percentBox, .customPercent{
+        flex-grow: 1;
+    }
+}
