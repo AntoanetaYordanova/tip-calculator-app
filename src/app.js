@@ -3,7 +3,7 @@ start();
 function start() {
     const billInput = document.querySelector('.inputWrapper input');
     const percentsWrapper = document.querySelector('.percentsWrapper');
-    const numPeopleInput = document.querySelector('.numberPeopleNormal');
+    const numPeopleInput = document.querySelector('.numberPeople');
     const tipPerPersonP = document.querySelector('.tipPerPerson');
     const totalTippP = document.querySelector('.tipTotal');
     const customPercentInput = document.getElementById('customPercent');
@@ -31,7 +31,7 @@ function start() {
         bill = input;
 
         if(checkConditions()) {
-            print();
+            printFunct();
         }
     });
 
@@ -48,7 +48,7 @@ function start() {
             ev.target.classList.add('percentBoxActive');
             
             if(checkConditions()) {
-                print();
+                printFunct();
             }
         }
     });
@@ -77,7 +77,7 @@ function start() {
         percents = input;
 
         if(checkConditions()) {
-            print();
+            printFunct();
         }
     });
 
@@ -104,7 +104,7 @@ function start() {
         numPeople = input;
 
         if(checkConditions()) {
-            print();
+            printFunct();
         }
     });
 
@@ -132,7 +132,7 @@ function start() {
         return totalAmount() / numPeople;
     }
 
-    function rprint() {
+    function printFunct() {
         totalTippP.textContent = totalAmount().toFixed(2);
         tipPerPersonP.textContent = tipPerPerson().toFixed(2);
     }
