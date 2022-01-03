@@ -63,7 +63,6 @@ button{
     border-radius: 23px;
     padding: 25px;
     display: flex;
-    /* min-height: 45vh; */
 }
 
 .leftSide, .rightSide{
