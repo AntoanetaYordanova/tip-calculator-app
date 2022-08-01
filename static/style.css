@@ -27,8 +27,15 @@ header{
 }
 
 header .logoBox{
+    text-align: center;
     margin-top: 170px;
     margin-bottom: 60px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: rgb(106, 128, 130);
+    font-size: 1.2rem;
 }
 
 main{
